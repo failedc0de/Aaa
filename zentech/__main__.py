@@ -64,7 +64,7 @@ Prefixes: `!` `$`**"""
 
 async def help_parser(name, keyboard=None):
     if not keyboard:
-        help_keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
+        help_keyboard = InlineKeyboardMarkup(paginate_modules(2, HELPABLE, "help"))
     return (help_text,help_keyboard)
 
 @app.on_callback_query(filters.regex("bot_commands"))
