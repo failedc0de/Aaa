@@ -24,7 +24,7 @@ app = Client(
     name="app2", 
     bot_token=BOT_TOKEN, 
     api_id=API_ID, 
-    api_hash=API_HASH
+    api_hash=API_HASH,
     plugins={"root": "zentech.Manager"},
 )
 app.start()
