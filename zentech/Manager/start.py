@@ -16,7 +16,7 @@ async def form_bot(_, ctx: Message):
         password2 = await ctx.chat.ask("konfimasi password!!")
         if password2.text != password.text:
             return await _.send_message(ctx.chat.id, f"password tidak sesuai")
-        await _.send_message(ctx.chat.id, f"Selamat!!\n\nNama : {nama.text}\nID : {id.text}\nPassword : {password2.text}")
+        await _.send_message(ctx.chat.id, f"Selamat!!\n\nNama : {Nama.text}\nID : {id.text}\nPassword : {password2.text}")
     except Exception as ex:
         print('Mistakes for connection')
         print(ex)
