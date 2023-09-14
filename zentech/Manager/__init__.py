@@ -29,6 +29,6 @@ def __list_all_modules():
         return to_load
     return all_modules
 
-importlib.import_module("zentech.Manager.__main__")
+importlib.import_module("zentech.userbot.__main__")
 ALL_MODULES = sorted(__list_all_modules())
 __all__ = ALL_MODULES + ["ALL_MODULES"]
