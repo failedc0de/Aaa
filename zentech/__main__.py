@@ -14,7 +14,7 @@ from zentech import (
     app,
     aiohttpsession
 )
-from zentech.plugins import ALL_MODULES
+from zentech.Manager import ALL_MODULES
 from zentech.utils import paginate_modules
 loop = asyncio.get_event_loop()
 
@@ -25,7 +25,7 @@ async def start_bot():
     global HELPABLE
 
     for module in ALL_MODULES:
-        imported_module = importlib.import_module("zentech.plugins." + module)
+        imported_module = importlib.import_module("zentech.Manager." + module)
         if (
             hasattr(imported_module, "__MODULE__")
             and imported_module.__MODULE__
