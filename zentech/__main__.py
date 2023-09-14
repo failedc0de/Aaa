@@ -25,7 +25,7 @@ async def start_bot():
     global HELPABLE
 
     for module in ALL_MODULES:
-        imported_module = importlib.import_module(""zentech.Manager." + module)
+        imported_module = importlib.import_module("zentech.Manager." + module)
         if (
             hasattr(imported_module, "__MODULE__")
             and imported_module.__MODULE__
