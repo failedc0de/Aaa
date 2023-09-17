@@ -1,0 +1,13 @@
+pyrogram
+asyncio
+python-dotenv
+uvloop
+TgCrypto
+motor
+Abg==2.3.1
+cachetools
+requests
+aiohttp
+aiofiles
+Pillow
+pyromod
