@@ -34,7 +34,7 @@ async def form_bot(_, ctx: Message):
 async def auth(_, ctx: Message):
     chat_id = ctx.chat.id
     userid = await extract_user(ctx)
-    await ctx.reply_text("auth CMD)
+    await ctx.reply_text("auth CMD")
     if not ctx.reply_to_message:
         if len(ctx.command) != 2:
             return await ctx.reply_text("😕 Maaf, **Saya tidak bisa** menemukan pengguna ini!\n\n» coba beri saya id atau username pengguna tersebut")
