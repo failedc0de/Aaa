@@ -1,6 +1,6 @@
 from pyrogram import Client, idle, filters
 from pyrogram.types import Message
-from zentech.Database.test import get_authuser_names, save_authuser, delete_authuser, extract_user
+from zentech.Database import get_authuser_names, save_authuser, delete_authuser, extract_user
 
 async def int_to_alpha(user_id: int) -> str:
     alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"]
