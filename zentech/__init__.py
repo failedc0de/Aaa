@@ -4,10 +4,14 @@ from datetime import datetime
 from Abg import patch
 from aiohttp import ClientSession
 from pyrogram import Client
-from pyrogram import Client
+from motor.motor_asyncio import AsyncIOMotorClient as pantek
+
 MOD_LOAD = []
 MOD_NOLOAD = []
 
+
+MONGODB_CLI = pantek("mongodb+srv://khansagunawan157:UDg0BmbVKhHlOpGv@cluster0.zyfsas1.mongodb.net/?retryWrites=true&w=majority")
+db = MONGODB_CLI.tech
 
 StartTime = time.time()
 
